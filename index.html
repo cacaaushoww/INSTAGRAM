@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Instagram</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="language-selector">Português (Brasil)</div>
+
+        <div class="login-container">
+            <img src="logo/logo.png" alt="Instagram" class="logo-image">
+            
+            <form class="login-form" id="loginForm">
+                <input type="text" id="username" placeholder="Nome de usuário, email ou celular" class="input-field">
+                
+                <div class="password-wrapper">
+                    <input type="password" id="password" placeholder="Senha" class="input-field">
+                    <span id="togglePassword" class="material-icons-outlined eye-icon">visibility_off</span>
+                </div>
+                
+                <button type="submit" class="login-btn">Entrar</button>
+            </form>
+
+            <p class="help-text">Esqueceu a senha?</p>
+        </div>
+
+        <div class="footer-buttons">
+            <button type="button" class="create-account-btn">Criar nova conta</button>
+            <div class="meta-container">
+                <img src="logo/meta.png" alt="Meta" class="meta-image">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modalError">
+        <div class="modal-box">
+            <div class="modal-content">
+                <p>Insira seu nome de usuário, email ou número de celular para entrar</p>
+            </div>
+            <div class="modal-actions">
+                <button type="button" class="btn-ok" id="closeModal">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modalPasswordError">
+        <div class="modal-box">
+            <div class="modal-content">
+                <h3>Senha incorreta</h3>
+                <p>A senha inserida está incorreta. Tente novamente.</p>
+            </div>
+            <div class="modal-actions">
+                <button type="button" class="btn-ok" id="closePassModal">Tentar novamente</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
